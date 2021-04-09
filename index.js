@@ -23,4 +23,4 @@ app.get('/todo/:index', (req, res) => {
 
 
 
-app.listen(port,() => console.log('listening'));
+app.listen(port,() => console.log(`running on port ${port}, open on http://localhost:${port}`));
