@@ -1,0 +1,36 @@
+<%- include("header") %>
+<h1 class="text-center">Add Todo Item</h1>
+<div class="card wrapper my-4">
+    <div class="card-header">
+        <h3>Item</h3>
+    </div>
+    <div class="card-body">
+        <form id="addItemForm">
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input type="text" name="title" maxlength="100" class="form-control" id="Title">
+            </div>
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <textarea class="form-control" name="description" maxlength="500" id="Description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="Status">Status</label>
+                <select id="Status" name="status" class="form-control">
+                    <option value="1">Inserted</option>
+                    <option value="2">In Process</option>
+                    <option value="3">Completed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ExpirationDate">Expiration date</label>
+                <input type="date" name="expirationDate" class="form-control" id="ExpirationDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="/js/shared.js"></script>
+<script src="/js/todoItemClass.js"></script>
+<script src="/js/add.js"></script>
+<%- include("footer") %>

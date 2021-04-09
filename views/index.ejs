@@ -1,0 +1,18 @@
+<%- include("header") %>
+<h1 class="text-center">Home</h1>
+<div class="card wrapper my-4">
+    <div class="card-header d-flex justify-content-between">
+        <h3>Todos List</h3>
+        <a href="/addItem">
+            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+        </a>
+    </div>
+    <div class="card-body">
+        <ul class="list-group" id="list">
+            <!-- Todo List Items Goes Here -->
+        </ul>
+    </div>
+</div>
+<script src="/js/shared.js"></script>
+<script src="/js/home.js"></script>
+<%- include("footer") %>
